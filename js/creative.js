@@ -72,4 +72,21 @@
     }
   });
 
+
+  $(document).ready(function() {
+      var cnt = 0;
+      var specials = $(".headerOverlay");
+
+      function next() {
+          if (cnt < 2) {
+              specials.fadeTo(2000, 0, 'linear').fadeTo(2000, 1,'linear', next);
+              ++cnt;
+          } else if(cnt === 2){
+            specials.fadeTo(2000, 0, 'linear');
+          }              
+      }
+
+      next();
+  });
+
 })(jQuery); // End of use strict

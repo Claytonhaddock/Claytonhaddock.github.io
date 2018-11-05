@@ -137,7 +137,8 @@ img::-moz-selection {
   height: 100%;
   position: absolute;
   top: 56px;
-  background-color: rgba(0,0,0,0.4);
+  opacity: 1;
+  background-color: black;
 }
 
 .stockHeader {
@@ -332,7 +333,8 @@ header.masthead p {
     height: 100%;
     position: absolute;
     top: 0px;
-    background-color: rgba(0,0,0,0.4);
+    opacity: 1;
+    background-color: black;
   }
 }
 
